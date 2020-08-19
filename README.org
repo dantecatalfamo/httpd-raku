@@ -1,0 +1,3 @@
+* httpd-raku
+  A small script to try out Raku's Grammars. Parses combined-style
+  logs from OpenBSD's =httpd= to provide some basic statistics.
