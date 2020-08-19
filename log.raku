@@ -83,10 +83,10 @@ sub MAIN(
         @requests.push($request);
     }
 
-    say "\n{@requests.elems}";
+    say "\nTotal parsed: {@requests.elems}";
     my $taken = now - $begin;
     my $rate = $taken / @requests.elems;
-    printf("Time: %f.2\nPer: %f.5\nRate: %f.2/second", $taken, $rate, 1/$rate);
+    printf("Time: %.2f seconds\nPer line: %.5f seconds\nRate: %.2f /second\n", $taken, $rate, 1/$rate);
 
     my %agents;
     my %paths;
