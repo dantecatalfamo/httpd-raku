@@ -57,7 +57,6 @@ sub MAIN(
     Bool :$u,      #= Show User-Agent statistics
     Bool :$r,      #= Show Referrer statistics
     Bool :$m,      #= Only show statistics on User-Agents starting with "Mozilla/5.0"
-    Bool :$f,      #= Only show foreign referrers
     Int :$n = 25,  #= Number of top positions to show for each stat
 ) {
     my @requests;
